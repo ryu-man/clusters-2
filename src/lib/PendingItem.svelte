@@ -64,7 +64,7 @@
 		</div>
 	</div>
 
-	<div class="hidden md:block border-l border-neutral-200 dark:border-neutral-500 h-full"></div>
+	<div class="hidden md:block border-l border-black dark:border-white h-full opacity-10"></div>
 
 	<a
 		class="w-[30px] h-[30px] md:w-10 md:h-10 flex items-center justify-center border border-neutral-300 dark:md:border-neutral-600 rounded-md md:rounded-[10px] text-base md:text-xl leading-[1]"
