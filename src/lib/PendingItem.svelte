@@ -58,7 +58,7 @@
 
 		<div class="flex-1 md:hidden"></div>
 
-		<div class="flex gap-1 items-center truncate text-small">
+		<div class="flex gap-[5px] items-center truncate text-small">
 			<div class="text-base leading-[1] opacity-30">
 				<ExtendIcon />
 			</div>
