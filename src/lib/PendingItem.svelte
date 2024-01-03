@@ -28,7 +28,7 @@
 <div class="pending-item">
 	<div class="flex gap-3 col-span-full md:col-span-1 md:flex-1">
 		<button
-			class="w-[41px] h-[43px] bg-neutral-100 border border-neutral-200 rounded-[10px] flex items-center justify-center text-xl shrink-0 dark:bg-neutral-900 dark:border-neutral-700"
+			class="w-[41px] h-[43px] bg-neutral-100 border border-neutral-200 rounded-[10px] flex items-center justify-center text-xl shrink-0 dark:bg-neutral-600 dark:border-neutral-500"
 		>
 			{#await items[type] then comp}
 				<svelte:component this={comp.default}></svelte:component>
@@ -64,10 +64,10 @@
 		</div>
 	</div>
 
-	<div class="hidden md:block border-l border-neutral-200 dark:border-neutral-700 h-full"></div>
+	<div class="hidden md:block border-l border-neutral-200 dark:border-neutral-500 h-full"></div>
 
 	<a
-		class="w-[30px] h-[30px] md:w-10 md:h-10 flex items-center justify-center border border-neutral-300 dark:border-neutral-700 rounded-md md:rounded-[10px] text-base md:text-xl leading-[1]"
+		class="w-[30px] h-[30px] md:w-10 md:h-10 flex items-center justify-center border border-neutral-300 dark:md:border-neutral-600 rounded-md md:rounded-[10px] text-base md:text-xl leading-[1]"
 		href="http://test.com/{transactionHash}"
 	>
 		<ExternalIcon />
@@ -76,7 +76,7 @@
 
 <style lang="postcss">
 	.pending-item {
-		@apply grid border border-neutral-200 rounded-lg py-3 px-4 items-center bg-white dark:bg-neutral-800 dark:border-neutral-700 text-black dark:text-white;
+		@apply grid border border-neutral-200 rounded-lg py-3 px-4 items-center bg-white dark:bg-neutral-700 dark:border-neutral-500 text-black dark:text-white;
 
 		grid-template-columns: 1fr auto auto;
 		gap: theme('spacing.5');
