@@ -17,9 +17,7 @@
 </script>
 
 <script lang="ts">
-	import dayjs from 'dayjs';
 	import { ExtendIcon, ExternalIcon } from './icons';
-	import { derived } from 'svelte/store';
 
 	export let type: Type;
 	export let chainId: number;
@@ -30,7 +28,7 @@
 <div class="pending-item">
 	<div class="flex gap-3 col-span-full md:col-span-1 md:flex-1">
 		<button
-			class="w-[41px] h-[43px] bg-neutral-100 border border-neutral-300 rounded-[10px] flex items-center justify-center text-xl shrink-0 dark:bg-neutral-900 dark:border-neutral-700"
+			class="w-[41px] h-[43px] bg-neutral-100 border border-neutral-200 rounded-[10px] flex items-center justify-center text-xl shrink-0 dark:bg-neutral-900 dark:border-neutral-700"
 		>
 			{#await items[type] then comp}
 				<svelte:component this={comp.default}></svelte:component>
@@ -66,7 +64,7 @@
 		</div>
 	</div>
 
-	<div class="hidden md:block border-l border-neutral-300 h-full"></div>
+	<div class="hidden md:block border-l border-neutral-200 dark:border-neutral-700 h-full"></div>
 
 	<a
 		class="w-[30px] h-[30px] md:w-10 md:h-10 flex items-center justify-center border border-neutral-300 dark:border-neutral-700 rounded-md md:rounded-[10px] text-base md:text-xl leading-[1]"
