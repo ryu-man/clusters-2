@@ -31,7 +31,7 @@
 	const timeLeftAt = dayjs().add(timeLeftSeconds, 'seconds');
 
 	// Calculate reactivly the time left
-	const timeLeftStore = derived(nowStore, (now) => Math.max(0, timeLeftAt.diff(now, 'seconds')),0);
+	const timeLeftStore = derived(nowStore, (now) => Math.max(0, timeLeftAt.diff(now, 'seconds')), 0);
 </script>
 
 <div class="pending-item">
@@ -55,18 +55,18 @@
 	<div class="flex md:flex-col items-center col-span-2 md:col-span-1 md:items-end">
 		<div class="flex items-center gap-1">
 			<img
-				class="w-4 h-4 bg-neutral-300 rounded-full text-2xl"
+				class="w-4 h-4 bg-neutral-300 rounded-full text-2xl leading-[1]"
 				src="/images/chain/{chainId}.jpg"
 				alt="currency icon"
 			/>
 
-			<div class="font-bold">Ethereum</div>
+			<div class="font-bold truncate">Ethereum</div>
 		</div>
 
 		<div class="flex-1 md:hidden"></div>
 
 		<div class="flex gap-1 items-center opacity-50 truncate text-small">
-			<div class="text-base align-middle leading-6 flex justify-center"><ExtendIcon /></div>
+			<div class="text-base align-middle flex justify-center leading-[1]"><ExtendIcon /></div>
 			<div class="font-medium truncate">{$timeLeftStore}s left</div>
 		</div>
 	</div>
@@ -74,7 +74,7 @@
 	<div class="hidden md:block border-l border-neutral-300 h-full"></div>
 
 	<button
-		class="w-10 h-10 flex items-center justify-center border border-neutral-300 rounded-md text-xl"
+		class="w-10 h-10 flex items-center justify-center border border-neutral-300 rounded-md text-xl leading-[1]"
 	>
 		<ExternalIcon />
 	</button>
