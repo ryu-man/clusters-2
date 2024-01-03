@@ -37,7 +37,7 @@
 <div class="pending-item">
 	<div class="flex gap-3 col-span-full md:col-span-1 md:flex-1">
 		<button
-			class="w-11 h-11 bg-neutral-100 border border-neutral-300 rounded-lg flex items-center justify-center text-xl shrink-0"
+			class="w-11 h-11 bg-neutral-100 border border-neutral-300 rounded-lg flex items-center justify-center text-xl shrink-0 dark:bg-neutral-900 dark:border-neutral-700"
 		>
 			{#await items[type] then comp}
 				<svelte:component this={comp.default}></svelte:component>
@@ -82,7 +82,7 @@
 
 <style lang="postcss">
 	.pending-item {
-		@apply grid gap-6 border border-neutral-200 rounded-lg p-3 items-center bg-white;
+		@apply grid gap-6 border border-neutral-200 rounded-lg p-3 items-center bg-white dark:bg-neutral-800 dark:border-neutral-700 text-black dark:text-white;
 
 		grid-template-columns: 1fr auto auto;
 
