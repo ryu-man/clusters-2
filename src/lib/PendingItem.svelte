@@ -79,7 +79,7 @@
 		@apply grid border border-neutral-200 rounded-lg py-3 px-4 items-center bg-white dark:bg-neutral-700 dark:border-neutral-500 text-black dark:text-white;
 
 		grid-template-columns: 1fr auto auto;
-		gap: theme('spacing.5');
+		gap: theme('spacing.3');
 
 		@media (min-width: theme('screens.md')) {
 			grid-template-columns: 1fr auto auto auto;
