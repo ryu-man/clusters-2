@@ -46,7 +46,7 @@
 	</div>
 
 	<div class="flex md:flex-col items-center col-span-2 md:col-span-1 md:items-end">
-		<div class="flex items-center gap-1">
+		<div class="flex items-center gap-[5px]">
 			<img
 				class="w-[17px] h-[17px] bg-neutral-300 rounded-full text-2xl leading-[1]"
 				src="/images/chain/{chainId}.jpg"
